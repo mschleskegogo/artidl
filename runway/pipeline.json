@@ -12,5 +12,8 @@
     "handler": "main.handler",
     "runtime": "nodejs12.x",
     "app_description": "Simple POC lambda to attempt to download artifacts from Artifactory."
+  },
+  "notifications": {
+    "slack": "#mstest"
   }
 }
