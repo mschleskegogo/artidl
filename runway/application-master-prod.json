@@ -1,0 +1,14 @@
+{
+  "app": {
+    "lambda_memory": "128",
+    "lambda_timeout": "300",
+    "lambda_environment": {
+      "Variables": {
+        "username": "developer",
+        "password": "read0n1y"
+      }
+    },
+    "app_description": "Simple POC lambda to attempt to download artifacts from Artifactory"
+  },
+  "lambda_role": "gogo-dash-infrastructure-role"
+}

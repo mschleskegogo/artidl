@@ -1,0 +1,16 @@
+{
+  "owner_email": "mschleske@gogoair.com",
+  "deployment": "spinnaker",
+  "env": ["dev", "stage", "prod"],
+  "services": {
+    "lambda": true,
+    "cloudwatch": true
+  },
+  "type": "lambda",
+  "lambda": {
+    "vpc_enabled": true,
+    "handler": "main.handler",
+    "runtime": "nodejs12.x",
+    "app_description": "Simple POC lambda to attempt to download artifacts from Artifactory."
+  }
+}

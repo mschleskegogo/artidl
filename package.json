@@ -1,0 +1,16 @@
+{
+  "name": "artidl",
+  "version": "1.0.0",
+  "description": "POC lambda to test downloading artifacts from artifactory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/main.js"
+  },
+  "author": "mschleske@gogoair.com",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "yauzl": "^2.10.0"
+  }
+}
