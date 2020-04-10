@@ -18,7 +18,7 @@ const downloadArtifact = async (repo, artifact) => {
 
   const writer = fs.createWriteStream(path)
 
-  const { username, pasword } = process.env
+  const { username, password } = process.env
 
   const body = {
     buildName: artifact,
@@ -57,6 +57,7 @@ const downloadArtifact = async (repo, artifact) => {
     })
   } catch (e) {
     console.error('Error ocurred while downloading artifact', e)
+    throw e
   }
 }
 
